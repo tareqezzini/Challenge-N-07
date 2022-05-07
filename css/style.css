@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+img
+{
+    max-width: 100%;
+}
+body{
+    font-family: 'Open Sans';
+    max-height: 100vh;
+    background-image: url('/images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.huddle
+{
+    height: 100vh;
+}
+.huddle .container
+{
+    padding: 2rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.huddle .logo img
+{
+    width: 160px;
+    margin-bottom: 1.5rem;
+}
+.huddle .container .info
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.huddle .container .info .image
+{
+    max-width: 800px;
+}
+.huddle  .info-text
+{
+    max-width: 40%;
+    color: white;
+}
+.huddle .info-text h1
+{
+    font-family: 'Poppins';
+    margin-bottom: 1rem;
+
+}
+.huddle .info-text p
+{
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    opacity: .9;
+}
+.huddle .info-text a
+{
+    display: inline-block;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: .7rem 4rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 0 5px 8px rgb(58, 58, 58);
+    transition: .3s;
+}
+.huddle .info-text a:hover
+{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.huddle .container .icons
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.huddle .icons a {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.huddle .icons a:hover
+{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+@media (max-width:768px) {
+    body
+    {
+        background-image: url('images/bg-mobile.svg');
+        min-height: 100vh;
+        font-size: 11px;
+    }
+    .huddle{
+        height: 100%;
+    }
+    .huddle .container .info
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .huddle  .info-text
+    {
+        max-width: 100%;
+    }
+    .huddle  .info-text p
+    {
+        font-size: .8rem;
+    }
+    .huddle .container .icons
+    {
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: .7rem
+        
+    }
+}
